@@ -1,5 +1,28 @@
 test 1:
 >>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text = "Holberton School"
+>>> text_indentation(text)
+Holberton School
+
+test 2:
+>>> text = "Holberton.School"
+>>> text_indentation(text)
+Holberton.
+
+School
+
+test 3:
+>>> text = "Holberton. School? How are you: John"
+>>> text_indentation(text)
+Holberton.
+
+School?
+
+How are you:
+
+John
+
+test 4:
 >>> text = "Hello. How are you? I'm fine: thanks."
 >>> text_indentation(text)
 Hello.
@@ -10,52 +33,16 @@ I'm fine:
 
 thanks.
 
-test 2:
+test 5:
 >>> text = "   This is a test.    Spaces should be removed."
 >>> text_indentation(text)
 This is a test.
 
 Spaces should be removed.
 
-test 3:
->>> text = "No punctuation here"
->>> text_indentation(text)
-No punctuation here
-
-test 4:
->>> text = "What is this?  A test?"
->>> text_indentation(text)
-What is this?
-
-A test?
-
-test 5:
->>> text = ""
->>> text_indentation(text)
-
 test 6:
->>> text = None
+>>> text = 12
 >>> text_indentation(text)
 Traceback (most recent call last):
     ...
 TypeError: text must be a string
-
-test 7:
->>> text = 42
->>> text_indentation(text)
-Traceback (most recent call last):
-    ...
-TypeError: text must be a string
-
-test 8:
->>> text = "Punctuation: should work: correctly. Even with? Spaces."
->>> text_indentation(text)
-Punctuation:
-
-should work:
-
-correctly.
-
-Even with?
-
-Spaces.
