@@ -5,6 +5,8 @@ types are float or integer. Any other data type will show an exception.
 Floats are converted to integers by taking the first digit, so you can do
 the addition only with integers.
 """
+
+
 def add_integer(a, b=98):
     """
     The function add_integer is a function which allows 2 parameters, “a”
@@ -18,5 +20,4 @@ def add_integer(a, b=98):
 
     a = int(a)
     b = int(b)
-
     return a + b
