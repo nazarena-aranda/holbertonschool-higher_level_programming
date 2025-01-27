@@ -60,3 +60,22 @@ test 9:
 Traceback (most recent call last):
     ...
 TypeError: div must be a number
+
+test 10:
+>>> matrix = [[1, 2], [3, 4]]
+>>> div = float('inf')
+>>> matrix_divided(matrix, div)
+[[0.0, 0.0], [0.0, 0.0]]
+
+test 11:
+>>> matrix_divided([[1, 2], [3, 4]])
+Traceback (most recent call last):
+    ...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+test 12:
+>>> matrix_divided()
+Traceback (most recent call last):
+    ...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
