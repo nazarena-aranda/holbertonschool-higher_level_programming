@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 In this package you will be able to see how 2 numbers add up. Valid number types are float or integer.
 Any other data type will show an exception. Floats are converted to integers by taking the first digit,
@@ -18,4 +18,3 @@ def add_integer(a, b=98):
     b = int(b)
 
     return a + b
-    
