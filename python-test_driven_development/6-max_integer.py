@@ -11,14 +11,13 @@ def max_integer(lst=[]):
     """
     if not isinstance(lst, list):
         raise TypeError("The argument must be a list")
-    
+
     if len(lst) == 0:
         return None
 
     result = lst[0]
-    i = 1
-    while i < len(lst):
+    for i in range(1, len(lst)):
         if lst[i] > result:
             result = lst[i]
-        i += 1
     return result
+
