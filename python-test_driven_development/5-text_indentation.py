@@ -13,13 +13,10 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     result = ""
-    i = 0
-    while i < len(text):
-        result += text[i]
-        if text[i] in ['.', '?', ':']:
+    for char in text:
+        result += char
+        if char in [".", "?", ":"]:
+            result = result.strip()
             result += "\n\n"
-            while i + 1 < len(text) and text[i + 1] == " ":
-                i += 1
-        i += 1
 
     print(result.strip())
