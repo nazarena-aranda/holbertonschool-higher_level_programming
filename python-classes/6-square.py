@@ -13,8 +13,8 @@ class Square:
     """
 
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -39,7 +39,7 @@ class Square:
             not isinstance(value, tuple)
             or len(value) != 2
             or not all(isinstance(i, int) for i in value)
-            or not all(num >= 0) for num in value
+            or not all(num >= 0 for num in value)
         ):
             raise TypeError("position must be a tuple of 2 positive integers")
 
