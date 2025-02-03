@@ -60,7 +60,7 @@ class Rectangle:
     def __str__(self):
         if self.__height == 0 or self.__width == 0:
             return ""
-        symbol = str(self.print_symbol) 
+        symbol = str(self.print_symbol)
         return "\n".join(symbol * self.__width for e in range(self.__height))
 
     def __repr__(self):
