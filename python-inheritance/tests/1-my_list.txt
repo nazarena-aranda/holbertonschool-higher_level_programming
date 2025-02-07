@@ -1,27 +1,27 @@
 >>> MyList = __import__('1-my_list').MyList
 
-test 1:
+test1:
 >>> my_list = MyList()
 >>> my_list.print_sorted()
 []
 
-test 2:
->>> my_list = My_List([1, 7, 6, 5])
+test2:
+>>> my_list = MyList([1, 7, 6, 5])
 >>> my_list.print_sorted()
 [1, 5, 6, 7]
 
-test 3:
->>> my_list = My_List([-1, -7, 5, -6])
+test3:
+>>> my_list = MyList([-1, -7, 5, -6])
 >>> my_list.print_sorted()
 [-7, -6, -1, 5]
 
-test 4:
->>> my_list = My_List([1, 5, 6, 7])
+test4:
+>>> my_list = MyList([1, 5, 6, 7])
 >>> my_list.print_sorted()
 [1, 5, 6, 7]
 
-test 5:
->>> my_list = My_List([1, 5, 6, 7])
+test5:
+>>> my_list = MyList([1, 5, 6, 7])
 >>> my_list.append(8)
 >>> my_list
 [1, 5, 6, 7, 8]
