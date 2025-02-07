@@ -4,7 +4,7 @@ create class
 """
 
 
-class BaseGeometry():
+class BaseGeometry:
     """
     class BaseGeometry
     """
