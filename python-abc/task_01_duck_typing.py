@@ -22,6 +22,9 @@ class Circle(Shape):
     def __init__(self, radius):
         self.__radius = radius
 
+        if not isinstance(radius, int) or isinstance(radius, bool):
+            raise TypeError(f"{radius} must be an integer")
+
     def area(self):
         return self.__radius ** 2 * math.pi
 
