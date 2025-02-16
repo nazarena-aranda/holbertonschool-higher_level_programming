@@ -22,16 +22,11 @@ def load_from_json_file(filename):
         return json.load(file)
 
 
-def add_items():
-    """
-    script that adds all arguments to a Python list,
-    and then save them to a file
-    """
-    filename = "add_item.json"
-    try:
-        items = load_from_json_file(filename)
-    except FileNotFoundError:
-        items = []
+filename = "add_item.json"
+try:
+    items = load_from_json_file(filename)
+except FileNotFoundError:
+    items = []
 
-    items.extend(sys.argv[1:])
-    save_to_json_file(items, filename)
+items.extend(sys.argv[1:])
+save_to_json_file(items, filename)
