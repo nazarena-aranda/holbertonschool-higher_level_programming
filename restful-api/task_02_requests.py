@@ -30,7 +30,9 @@ def fetch_and_save_posts():
     if status == 200:
         posts = response.json()
         with open("posts.csv", 'w') as file:
-            fieldnames = ["userId", "id", "title", "body"]
-            writer = csv.DictWriter(file, fieldnames=fieldnames)
+            fieldnames = ["id", "title", "body"]
+            writer = csv.DictWriter(file, fieldnames=fieldnames, extrasaction="ignore")
             writer.writeheader()
             writer.writerows(posts)
+
+fetch_and_save_posts()
