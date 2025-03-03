@@ -14,7 +14,7 @@ class Server(BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write("Hello, this is a simple API!".encode(encoding='utf_8'))
 
-        if self.path == "/data":
+        elif self.path == "/data":
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
