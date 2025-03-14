@@ -61,6 +61,24 @@ mysql --version
 
 ---
 
+## 🔍 SQL Joins Cheat Sheet
+
+![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40adilsaid64%2Funderstanding-sql-joins-a-quick-guide-with-examples-b0985419ea85&psig=AOvVaw1s03iCC2gfxJUsteVpdczM&ust=1742054669325000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOj1m8H5iYwDFQAAAAAdAAAAABAE)
+
+| JOIN Type        | Description |
+|-----------------|-------------|
+| **INNER JOIN** | Returns only the records with matches in both tables. |
+| **LEFT JOIN** | Returns all records from the left table and the matched records from the right table. |
+| **RIGHT JOIN** | Returns all records from the right table and the matched records from the left table. |
+| **FULL OUTER JOIN** | Returns all records when there is a match in either the left or right table. |
+| **LEFT JOIN with NULL filter** | Returns only records from the left table that have no match in the right table. |
+| **RIGHT JOIN with NULL filter** | Returns only records from the right table that have no match in the left table. |
+| **CROSS JOIN** | Returns the Cartesian product of both tables (all possible combinations). |
+
+
+
+---
+
 ## 💪 How to Run the Scripts
 
 To run any script in MySQL, use this command:
