@@ -63,7 +63,10 @@ mysql --version
 
 ## 🔍 SQL Joins Cheat Sheet
 
-![SQL Joins](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40adilsaid64%2Funderstanding-sql-joins-a-quick-guide-with-examples-b0985419ea85&psig=AOvVaw1s03iCC2gfxJUsteVpdczM&ust=1742054669325000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOj1m8H5iYwDFQAAAAAdAAAAABAE)
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*Nrjozs1i0XIiACKd.png" alt="SQL Joins Cheatsheet">
+</p>
+
 
 | JOIN Type        | Description |
 |-----------------|-------------|
